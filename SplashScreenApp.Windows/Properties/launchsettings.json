@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"SplashScreenApp.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"SplashScreenApp.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}

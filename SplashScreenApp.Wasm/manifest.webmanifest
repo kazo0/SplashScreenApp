@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "SplashScreenApp",
+  "display": "standalone",
+  "name": "SplashScreenApp",
+  "short_name": "SplashScreenApp",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
