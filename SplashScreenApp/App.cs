@@ -4,7 +4,7 @@ public class App : Application
 {
     protected Window? MainWindow { get; private set; }
 
-    protected override void OnLaunched(LaunchActivatedEventArgs args)
+    protected override async void OnLaunched(LaunchActivatedEventArgs args)
     {
 #if NET6_0_OR_GREATER && WINDOWS && !HAS_UNO
         MainWindow = new Window();
@@ -19,23 +19,24 @@ public class App : Application
 
         // Do not repeat app initialization when the Window already has content,
         // just ensure that the window is active
-        if (MainWindow.Content is not Frame rootFrame)
+        if (MainWindow.Content is not Shell shell)
         {
             // Create a Frame to act as the navigation context and navigate to the first page
-            rootFrame = new Frame();
+            shell = new Shell();
 
             // Place the frame in the current Window
-            MainWindow.Content = rootFrame;
+            MainWindow.Content = shell;
 
-            rootFrame.NavigationFailed += OnNavigationFailed;
+            shell.RootFrame.NavigationFailed += OnNavigationFailed;
         }
 
-        if (rootFrame.Content == null)
+        if (shell.RootFrame.Content == null)
         {
-            // When the navigation stack isn't restored navigate to the first page,
-            // configuring the new page by passing required information as a navigation
-            // parameter
-            rootFrame.Navigate(typeof(MainPage), args.Arguments);
+			// When the navigation stack isn't restored navigate to the first page,
+			// configuring the new page by passing required information as a navigation
+			// parameter
+			///await Task.Delay(5000);
+			shell.RootFrame.Navigate(typeof(MainPage), args.Arguments);
         }
 
         // Ensure the current window is active
