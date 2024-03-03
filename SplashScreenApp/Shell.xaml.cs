@@ -1,3 +1,7 @@
+#if ANDROID
+using Android.App;
+#endif
+
 using Uno.Toolkit;
 using Uno.Toolkit.UI;
 

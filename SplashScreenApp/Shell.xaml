@@ -8,7 +8,6 @@
 			 mc:Ignorable="d">
 
 	<utu:ExtendedSplashScreen x:Name="Splash"
-							  Platforms="None"
 							  HorizontalAlignment="Stretch"
 							  VerticalAlignment="Stretch"
 							  HorizontalContentAlignment="Stretch"
@@ -17,19 +16,13 @@
 			<DataTemplate>
 				<Grid>
 					<Grid.RowDefinitions>
-						<RowDefinition Height="*" />
-						<RowDefinition Height="*" />
+						<RowDefinition Height="2*" />
 						<RowDefinition Height="*" />
 					</Grid.RowDefinitions>
 
-					<!--<Image Source="ms-appx:///SplashScreenApp/Assets/Icons/splash.png"
-						   Grid.Row="1"
-						   VerticalAlignment="Center"
-						   Width="192"
-						   Height="192" />-->
-
 					<ProgressRing IsActive="True"
-								  Grid.Row="2"
+								  Grid.Row="1"
+								  Background="Transparent"
 								  VerticalAlignment="Center"
 								  HorizontalAlignment="Center"
 								  Height="75"

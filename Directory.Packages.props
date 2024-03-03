@@ -33,6 +33,7 @@
     <PackageVersion Include="Uno.WinUI.DevServer" Version="$(UnoVersion)" />
     <PackageVersion Include="Uno.WinUI.Skia.Gtk" Version="$(UnoVersion)" />
     <PackageVersion Include="Uno.WinUI.WebAssembly" Version="$(UnoVersion)" />
+    <PackageVersion Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.6" />
     <PackageVersion Include="Xamarin.Google.Android.Material" Version="1.10.0.2" />
   </ItemGroup>
 </Project>

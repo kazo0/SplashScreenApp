@@ -21,7 +21,7 @@
     <UnoSplashScreen
       Include="$(MSBuildThisFileDirectory)Splash\splash_screen.svg"
       BaseSize="128,128"
-      Color="#FFFFFF" />
+      Color="#FF0000" />
     <!-- NOTE: Files explicitly linked to display in the head projects for clarity. -->
     <None Include="$(MSBuildThisFileDirectory)Icons\icon.svg" Link="Icons\icon.svg" />
     <None Include="$(MSBuildThisFileDirectory)Icons\icon_foreground.svg" Link="Icons\icon_foreground.svg" />
